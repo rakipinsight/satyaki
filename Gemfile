@@ -59,3 +59,11 @@ gem 'pg', group: :production
 
 # gem 'pg', '~> 0.18.4'
 
+group :production, :staging do
+  gem "pg"
+end
+
+group :development, :test do
+  gem "sqlite3"
+end
+
